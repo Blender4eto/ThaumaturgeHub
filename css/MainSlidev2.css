@@ -1,0 +1,767 @@
+@charset "UTF-8";
+
+*{
+    font-family: Arial,  sans-serif;
+}
+
+body
+{
+    background-color: #181818;
+    overflow: hidden;
+    background-image: url(../images/Background_Main2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* margin: 0; */
+    /* font-family: system-ui; */
+    /*background-image: url(../images/Original/space_blue.jpg)*/
+}
+
+
+/* icon */
+
+.icon-div
+{
+    width: 15%;
+    height: 20%;
+    margin-left: 4.75%;
+    margin-top:5.25%;
+    /* background-color: red */
+    /* position: absolute; */
+    /* left:6%; */
+    /* top:13%; */
+    /* left:5%; */
+    /* top:10%; */
+}
+
+.icon
+{
+    background-image: url(../images/ButtonSize/Fox.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-color: #181818;
+    padding: 28% 28%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    border-width: 1%;
+    border-color: rgb(254, 148, 16);
+    border-style: solid;
+    cursor: pointer;
+    transition:0.8s;
+}
+.icon:hover
+{
+    padding: 30% 30%;
+    box-shadow: 0 0 10px rgb(254, 148, 16), 0 0 40px rgb(203, 118, 12), 0 0 80px rgb(151, 88, 8);
+}
+
+
+/*social*/
+
+.socialz
+{
+    margin-right:5%;
+    width: 5%;
+    height: 40%;
+    float:right;
+    position:absolute;
+    right:-6.25%;
+    top:1%;
+    /* background-color: blueviolet; */
+    /* margin-top:-13%; */
+}
+
+.sbtn
+{
+    transition: 0.8s;
+    border-style: solid;
+    cursor: pointer;
+    border-radius: 10px;
+    border-width: 1%;
+    margin-top:7%;
+    /* position: absolute; */
+    /* display: flex; */
+    /* margin-right:15%; */
+}
+
+
+.moderith
+{
+    background-image:  url(../images/ButtonSize/Modrinth_Dark_Logo_Mid.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-color: rgb(23, 170, 84);
+    border-color: rgb(23, 170, 84);
+    padding: 50% 50%;
+
+    transform: translate(-50%, 0);
+}
+.moderith:hover
+{
+    padding: 58% 58%;
+    box-shadow: 0 0 10px rgb(23, 170, 84), 0 0 40px rgb(20, 165, 81), 0 0 80px rgb(13, 114, 55);
+}
+
+
+.curseforge
+{
+    background-image:  url(../images/ButtonSize/CursingForge94.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-color: rgb(241, 100, 54);
+    border-color: rgb(241, 100, 54);
+    padding: 50% 50%;
+
+    transform: translate(-50%, 0);
+}
+.curseforge:hover
+{
+    padding: 58% 58%;
+    box-shadow: 0 0 10px rgb(241, 100, 54), 0 0 40px rgb(190, 78, 42), 0 0 80px rgb(139, 57, 30);
+}
+
+
+.discord
+{
+    background-image:  url(../images/ButtonSize/Discord94.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-color: rgb(88, 101, 242);
+    border-color: rgb(88, 101, 242);
+    padding: 50% 50%;
+
+    transform: translate(-50%, 0);
+}
+.discord:hover
+{
+    padding: 58% 58%;
+    box-shadow: 0 0 10px rgb(88, 101, 242), 0 0 40px rgb(69, 79, 191), 0 0 80px rgb(50, 57, 140);
+}
+
+
+/*sections*/
+aside
+{
+    width: 10%;
+    height: 55%;
+    position: absolute;
+    top:22.5%;
+    left:5%;
+    display:none;
+    /* background-color: blueviolet; */
+}
+
+
+.abtn
+{
+    background-color: rgb(22, 24, 28);
+    padding: 30% 30%;
+    margin-top:5%;
+    color: rgb(223, 120, 223);
+    border-radius: 15%;
+    border-color:rgb(223, 120, 223);
+    border-style: solid;
+    border-width: 1%;
+    cursor: pointer;
+    transition: 0.8s;
+    transform: translate(-50%, 0);
+    /* box-shadow: 0 0 10px rgb(88, 101, 242), 0 0 40px rgb(69, 79, 191), 0 0 80px rgb(50, 57, 140); */
+    /* margin-left:12%; */
+    /* padding: 55px 55px; */
+}
+
+.abtn:hover
+{
+    padding:33% 33%;
+}
+
+
+/*Tree*/
+
+.tree
+{
+    aspect-ratio: 1;
+    width: 25%;
+    /*height: 100%;*/
+    max-height: 80vh;
+    /*width: 26.70%;*/
+    /*height: 52.2%;*/
+    position:absolute;
+    top:50%;
+    left:25%;
+    margin-left:25%;
+    transform: translate(-50%, -50%);
+     /*background-color: blue;*/
+}
+
+/* tree arrow */
+
+
+.semi-circletli
+{
+    position:absolute;
+    border: 5px solid rgb(223, 120, 223);
+    border-bottom:0;
+    border-right:0;
+    border-radius: 100% 0 0 0;
+    width: 32.1%;
+    height: 32.1%;
+}
+
+
+.semi-circletri
+{
+    position:absolute;
+    border: 5px solid rgb(223, 120, 223);
+    border-radius: 0 100% 0 0;
+    border-bottom:0;
+    border-left:0;
+    top:0%;
+    right:0%;
+    width: 32.1%;
+    height: 32.1%;
+}
+
+
+.semi-circlebli
+{
+    position:absolute;
+    border: 5px solid rgb(223, 120, 223);
+    border-radius: 0 0 100% 0;
+    border-top: 0;
+    border-left:0;
+    right:0%;
+    bottom:0%;
+    width: 32.1%;
+    height: 32.1%;
+}
+
+
+.semi-circlebri
+{
+    position:absolute;
+    border: 5px solid rgb(223, 120, 223);
+    border-radius: 0 0 0 100%;
+    border-top:0;
+    border-right:0;
+    bottom:0%;
+    left:0%;
+    width: 32.1%;
+    height: 32.1%;
+}
+
+
+
+.top-line
+{
+    position:absolute;
+    background-color: rgb(223, 120, 223);
+    width: 1%;
+    height: 20%;
+    left:50%;
+    top: 65%;
+    transform: translate(-50%, 0%);
+}
+.bottom-line
+{
+    position:absolute;
+    background-color: rgb(223, 120, 223);
+    width: 1%;
+    height: 20%;
+    left:50%;
+    top: 15%;
+    transform: translate(-50%, 0%);
+} 
+
+
+
+/* tree buttons */
+
+.tbtn
+{
+    border-radius: 50%;
+    border-color:rgb(223, 120, 223);
+    border-style: solid;
+    border-width:1%;
+    color: rgb(223, 120, 223);
+    background-color: #181818;
+    /* padding: 2rem; */
+    height: 23%;
+    width: 23%;
+    position:absolute;
+    transition: 0.8s;
+    z-index: 1;
+    /* max-height: 10%; */
+}
+
+.top
+{
+    transform: translate(-50%, -50%);
+    left:50%;
+    background-image: url(../images/kotel-remove.png);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: 70%;
+    background-color: #181818;
+}
+.top:hover 
+{
+    border-radius: 5%;
+    padding: 65% 52%;
+    margin-top:50%;
+    z-index: 3;
+    box-shadow: 0 0 10px rgb(146, 78, 146), 0 0 40px rgb(132, 67, 132), 0 0 80px rgb(81, 41, 81);
+    background-size: 27%, 24%;
+    background-position: 10% 7%;
+}
+.top .items
+{
+    display:none;
+    animation: fadeIn 1s forwards;
+    opacity: 0;
+}
+.top:hover .items
+{
+    position:absolute;
+    font-size: clamp(6px, 0.8vw, 16px);
+    display:block;
+}
+.top:hover .t1
+{
+    width:90%;
+    height: 10%;
+    top:31%;
+    left:5%;
+}
+.top:hover .t2
+{
+    width:90%;
+    height: 10%;
+    top:39%;
+    left:5%;
+}
+.top:hover .t3
+{
+    width:90%;
+    height: 15%;
+    top:50%;
+    left:5%;
+}
+.top:hover .t4
+{
+    top:58.5%;
+    left:5%;
+    width:90%;
+    height: 15%;
+}
+.top:hover .t5
+{
+    bottom:5%;
+    right:5%;
+    width: 35%;
+    height: 20%;
+}
+.top:hover .Alchemestry
+{
+    width:50%;
+    left:5%;
+    bottom:5%;
+    height: auto;
+    border-radius: 5%;
+    border-color: rgb(223, 120, 223);
+    border-style: solid;
+    box-shadow: 0 0 10px rgb(146, 78, 146), 0 0 40px rgb(132, 67, 132), 0 0 80px rgb(81, 41, 81);
+}
+.top:hover .Alchemy
+{
+    width:50%;
+    right:9%;
+    top:13.5%;
+    height: auto;
+}
+
+
+.bottom
+{
+    bottom:0%;
+    left:50%;
+    transform: translate(-50%, 50%);
+    background-image: url(../images/brain_in_jar-remove.png);
+    background-repeat:no-repeat;
+    background-position: 50% 20%;
+    background-size: 85%;
+    background-color: #181818;
+}
+.bottom:hover
+{
+    border-radius: 5%;
+    padding: 65% 52%;
+    margin-bottom:50%;
+    z-index: 3;
+    background-size: 30%;
+    background-position: 4% 2%;
+    box-shadow: 0 0 10px rgb(146, 78, 146), 0 0 40px rgb(132, 67, 132), 0 0 80px rgb(81, 41, 81);
+    /* background-size: 28%, 25%; */
+}
+.bottom .items
+{
+    display:none;
+    animation: fadeIn 1s forwards;
+    opacity: 0;
+}
+.bottom:hover .items
+{
+    position:absolute;
+    font-size: clamp(6px, 0.8vw, 16px);
+    display:block;
+}
+.bottom:hover .b1
+{
+    width:90%;
+    height: 10%;
+    top:33%;
+    left:5%;
+    /* right:10%; */
+    /* background-color:red; */
+}
+.bottom:hover .b2
+{
+    width:90%;
+    height: 15%;
+    top:45%;
+    left:5%;
+}
+.bottom:hover .b3
+{
+    top:60%;
+    left:5%;
+    width:90%;
+    height: 15%;
+}
+.bottom:hover .b4
+{
+    bottom:5%;
+    right:5%;
+    width: 35%;
+    height: 20%;
+    /* background-color: red; */
+}
+.bottom:hover .Golem
+{
+    width:50%;
+    height: 25%;
+    top:70%;
+    left:5%;
+    border-radius: 5%;
+    border-color: rgb(223, 120, 223);
+    border-style: solid;
+    box-shadow: 0 0 10px rgb(146, 78, 146), 0 0 40px rgb(132, 67, 132), 0 0 80px rgb(81, 41, 81);
+}
+.bottom:hover .Golemancy
+{
+    width:55%;
+    right:9%;
+    top:13.5%;
+    height: auto;
+}
+
+
+
+
+
+.center
+{
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    background-image: url(../images/matrix.png);
+    background-repeat:no-repeat;
+    background-position: 50%,50%;
+    background-size: 80%;
+    background-color: #181818;
+}
+.center:hover
+{
+    border-radius: 5%;
+    padding: 65% 52%;
+    z-index: 2;
+    background-size: 30%;
+    background-position: 8.5% 4.5%;
+    box-shadow: 0 0 10px rgb(146, 78, 146), 0 0 40px rgb(132, 67, 132), 0 0 80px rgb(81, 41, 81);
+}
+.center .items
+{
+    display:none;
+    animation: fadeIn 1s forwards;
+    opacity: 0;
+}
+.center:hover .items
+{
+    position:absolute;
+    font-size: clamp(6px, 0.8vw, 16px);
+    display:block;
+}
+.center:hover .c1
+{
+    top:33%;
+    left:5%;
+    width:90%;
+    height: 15%;
+    /* background-color:red; */
+}
+.center:hover .c2
+{
+    top:40%;
+    left:5%;
+    width:90%;
+    height: 15%;
+    /* background-color:red; */
+}
+.center:hover .c3
+{
+    top:47%;
+    left:5%;
+    width:90%;
+    height: 10%;
+    /* background-color:red; */
+}
+.center:hover .c4
+{
+    bottom:10%;
+    right:5%;
+    width: 35%;
+    height: 20%;
+    /* background-color:red; */
+}
+.center:hover .Altar
+{
+    left:5%;
+    top:65%;
+    width: 50%;
+    height: 30%;
+    border-radius: 5%;
+    border-color: rgb(223, 120, 223);
+    border-style: solid;
+    box-shadow: 0 0 10px rgb(146, 78, 146), 0 0 40px rgb(132, 67, 132), 0 0 80px rgb(81, 41, 81);
+}
+.center:hover .Infusion
+{
+    width:50%;
+    right:9%;
+    top:13.5%;
+    height: auto;
+}
+
+
+
+
+.left
+{
+    transform: translate(-50%, -50%);
+    top:50%;
+    background-image: url(../images/Wand-lay.png);
+    background-repeat:no-repeat;
+    background-position: 50% 45%;
+    background-size: 70%;
+    background-color: #181818;
+    /* background-image: url(../images/77164.png); */
+}
+.left:hover
+{
+    border-radius: 5%;
+    padding: 65% 52%;
+    margin-left:50%;
+    z-index: 2;
+    background-size: 25%;
+    background-position: 6.5% 7%;
+    box-shadow: 0 0 10px rgb(146, 78, 146), 0 0 40px rgb(132, 67, 132), 0 0 80px rgb(81, 41, 81);
+}
+.left .items
+{
+    display:none;
+    animation: fadeIn 1s forwards;
+    opacity: 0;
+}
+.left:hover .items
+{
+    display:block;
+    position:absolute;
+    font-size: clamp(6px, 0.8vw, 16px);
+}
+.left:hover .l1
+{
+    top:31.5%;
+    left:5%;
+    width:90%;
+    height: 10%;
+    /* background-color:red; */
+}
+.left:hover .l2
+{
+    top:45%;
+    left:5%;
+    width:90%;
+    height: 10%;
+    /* background-color:red; */
+}
+.left:hover .l3
+{
+    bottom:13%;
+    right:3%;
+    width: 38%;
+    height: 20%;
+    /* text-align: center; */
+    /* background-color:red; */
+}
+.left:hover .Wands
+{
+    left:4%;
+    top:65%;
+    width: auto;
+    height: 30%;
+    border-radius: 5%;
+    border-color: rgb(223, 120, 223);
+    border-style: solid;
+    box-shadow: 0 0 10px rgb(146, 78, 146), 0 0 40px rgb(132, 67, 132), 0 0 80px rgb(81, 41, 81);
+}
+.left:hover .Auromancy
+{
+    width:60%;
+    right:7%;
+    top:13.5%;
+    height: auto;
+}
+
+
+
+.right
+{
+    transform: translate(50%, -50%);
+    top:50%;
+    right:0%;
+    background-image: url(../images/googles2.png);
+    background-repeat:no-repeat;
+    background-position: 70%,50%;
+    background-size: 90%;
+    background-color: #181818;
+}
+.right:hover
+{
+    padding: 65% 52%;  
+    border-radius: 5%;
+    margin-right:50%;
+    z-index: 2;
+    background-size: 30%;
+    background-position: 10% 5%;
+    box-shadow: 0 0 10px rgb(146, 78, 146), 0 0 40px rgb(132, 67, 132), 0 0 80px rgb(81, 41, 81);
+}
+.right .items
+{
+    display:none;
+    animation: fadeIn 1s forwards;
+    opacity: 0;
+}
+.right:hover .items
+{
+    display:block;
+    position:absolute;
+    font-size: clamp(6px, 0.8vw, 16px);
+}
+.right:hover .r1
+{
+    top:28%;
+    left:5%;
+    width:90%;
+    height: 10%;
+    /* background-color:red; */
+}
+.right:hover .r2
+{
+    top:40%;
+    left:5%;
+    width:90%;
+    height: 10%;
+    /* background-color:red; */
+}
+.right:hover .r3
+{
+    top:49%;
+    left:5%;
+    width:90%;
+    height: 10%;
+    /* background-color:red; */
+}
+.right:hover .r4
+{
+    bottom:10%;
+    right:5%;
+    width: 35%;
+    height: 20%;
+    /* background-color:red; */
+}
+.right:hover .Esential
+{
+    left:5%;
+    top:65%;
+    width: 50%;
+    height: 30%;
+    border-radius: 5%;
+    border-color: rgb(223, 120, 223);
+    border-style: solid;
+    box-shadow: 0 0 10px rgb(146, 78, 146), 0 0 40px rgb(132, 67, 132), 0 0 80px rgb(81, 41, 81);
+}
+.right:hover .Artifice
+{
+    width:50%;
+    right:9%;
+    top:13%;
+    height: auto;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; } /* Start with opacity 0 */
+    50% { opacity: 0; } /* Stay invisible for 50% of the animation duration */
+    100% { opacity: 1; } /* Fade in completely */
+  }
+
+
+
+/* @keyframes center
+{
+ 100% {background-image: none;}
+ 50% {background-image: url(../images/matrix.png);}
+} */
+
+
+
+
+/* .arrow
+{
+    background-color:none;
+    width: 32.1%;
+    height: 32.1%;
+    border-width: 160px; 
+    border-color: rgb(223, 120, 223); 
+}
+.arrowi
+{
+    background-color:none; #181818
+    width: 32.1%;
+    height: 32.1%;
+} */
+
+
+/* .semi-circletl 
+{
+    border-radius: 100% 0 0 0;
+} */
+
+
+    /* background-color: linear-gradient(to bottom, rgb(22, 24, 28),rgb(22, 24, 28),rgb(22, 24, 28),rgb(22, 24, 28),rgb(81, 41, 81)); */
+    
+    /* animation-name: center; */
+    /* animation-duration: 0.8s; */

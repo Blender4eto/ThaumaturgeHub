@@ -1,0 +1,199 @@
+@charset "UTF-8";
+
+html{
+    height: 100%;
+    width: 100%;
+}
+
+body
+{
+    font-family: system-ui;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-image: url(../images/Background_Main2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #181818;
+    max-width: 75%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1.5rem
+}
+
+.title
+{
+    width:100%
+}
+
+
+/*Buttons*/
+
+.buttons
+{
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:0.5rem;
+    height: 4.5rem;
+} 
+
+.btn
+{
+  margin: 0.5%;
+  cursor: pointer;
+  color: #181818;
+  transition: 0.8s;
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 3px;
+}
+
+
+.LearnAboutThaumcraft
+{
+    background-color: rgb(22, 24, 28);
+    color: rgb(223, 120, 223);
+    border-color: rgb(223, 120, 223);
+    width:20vw;
+    height: 5vh;
+    background-image: url(../images/ButtonSize/Learn2.png);
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 1rem 6rem;
+}
+.LearnAboutThaumcraft:hover
+{
+    padding: 1.5rem 8rem;
+    color: rgb(223, 120, 223);
+    box-shadow: 0 0 10px rgb(146, 78, 146), 0 0 40px rgb(132, 67, 132), 0 0 80px rgb(81, 41, 81);
+}
+
+/*Moderith*/
+
+.Motherith
+{
+    background-image:  url(../images/ButtonSize/Modrinth_Dark_Logo_Mid.png);
+    background-size: 100%;
+    background-position: center;
+    background-color: rgb(23, 170, 84);
+    border-color: rgb(23, 170, 84);
+    padding: 1rem;
+}
+.Motherith:hover
+{
+    padding: 1.5rem;
+    box-shadow: 0 0 10px rgb(23, 170, 84), 0 0 40px rgb(20, 165, 81), 0 0 80px rgb(13, 114, 55);
+
+}
+
+/*CurseForge*/
+
+.CurseForge
+{
+    background-image:  url(../images/ButtonSize/CursingForge94.png);
+    background-size: 100%;
+    background-position: center;
+    background-color: rgb(241, 100, 54);
+    border-color: rgb(241, 100, 54);
+    padding: 1rem;
+
+}
+.CurseForge:hover
+{
+    padding: 1.5rem;
+    box-shadow: 0 0 10px rgb(241, 100, 54), 0 0 40px rgb(190, 78, 42), 0 0 80px rgb(139, 57, 30);
+}
+
+/*Discord*/
+
+.Discord
+{
+    background-image:  url(../images/ButtonSize/Discord94.png);
+    background-size: 100%;
+    background-position: center;
+    background-color: rgb(88, 101, 242);
+    border-color: rgb(88, 101, 242);
+    padding: 1rem;
+}
+.Discord:hover
+{
+    padding: 1.5rem;
+    box-shadow: 0 0 10px rgb(88, 101, 242), 0 0 40px rgb(69, 79, 191), 0 0 80px rgb(50, 57, 140);
+}
+
+
+@media (min-width: 768px) 
+{
+    .LearnAboutThaumcraft {
+        padding: 1.5rem 8rem;
+    }
+    .LearnAboutThaumcraft:hover{
+        padding: 1.75rem 10rem;
+    }
+    .Motherith,
+    .CurseForge,
+    .Discord
+    {
+        padding: 1.5rem;
+    }
+    .Motherith:hover,
+    .CurseForge:hover,
+    .Discord:hover
+
+    {
+        padding: 1.75rem;
+    }
+}
+
+@media (min-width: 1100px) 
+{
+    .LearnAboutThaumcraft {
+        padding: 2rem 12rem;
+    }
+    .LearnAboutThaumcraft:hover{
+        padding: 2.5rem 14rem;
+    }
+    .Motherith,
+    .CurseForge,
+    .Discord
+    {
+        padding: 2rem;
+    }
+    .Motherith:hover,
+    .CurseForge:hover,
+    .Discord:hover
+
+    {
+        padding: 2.5rem;
+    }
+}
+
+@media (min-width: 1500px) {
+    .LearnAboutThaumcraft {
+        padding: 2.5rem 16rem;
+    }
+    .LearnAboutThaumcraft:hover{
+        padding: 2.75rem 18rem;
+    }
+    .Motherith,
+    .CurseForge,
+    .Discord
+    {
+        padding: 2.5rem;
+    }
+    .Motherith:hover,
+    .CurseForge:hover,
+    .Discord:hover
+
+    {
+        padding: 2.75rem;
+    }
+
+}
